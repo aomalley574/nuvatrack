@@ -7,14 +7,62 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <link rel="stylesheet" href="/my_styles.css">
+
+  <style>
+    .pinkbutton { 
+    border: 3px LightBlue solid;
+    padding-top: 25x;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    margin: 60px;
+    background-color: #ffe6e6;
+    display: inline-block;
+    }
+    
+.row {
+    display: flex;
+    justify-content: center }
+
+.mb {
+  margin-bottom: 10px;
+}
+
+.centered {
+  text-align: center;
+}
+    
+.one-third {
+    width: 50%%;
+    }
+
+body {
+  font-family: 'Catamaran', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-  <div>
-    <a href ="/tracked" style ="border: 3px blue solid; padding-top: 5x; padding: 5px 15px 5px 15px; border-radius: 5px">
-      Today is Day One of my Nuva Ring Cycle
-    </a>
+  <div class="row centered">
+    <div class="one-third">
+      <a class="pinkbutton" href ="/tracked">
+        <h2>
+          Today is Day One of my Nuva Ring Cycle
+        </h2>
+      </a>
+    </div>
   </div>
 
 </body>
