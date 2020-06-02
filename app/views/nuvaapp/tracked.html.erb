@@ -7,46 +7,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<style>
-    .pinkbutton { 
-    border: 3px LightBlue solid;
-    padding-top: 25x;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 10px;
-    text-align: center;
-    width: 100%;
-    margin: 60px;
-    background-color: #ffe6e6;
-    display: inline-block;
-    }
-    
-.row {
-    display: flex;
-    justify-content: center }
-
-.mb {
-  margin-bottom: 10px;
-}
-
-.centered {
-  text-align: center;
-}
-    
-.one-third {
-    width: 50%%;
-    }
-
-body {
-  font-family: 'Catamaran', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-  </style>
-
+  <link rel="stylesheet" href="/my_styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
 
 </head>
@@ -57,10 +18,43 @@ body {
     <div class="one-third">
       <a class="pinkbutton" href ="/">
         <h2>
-          Nuva Ring is Submitted today!
+          Ring Removal Reminder Sent!
         </h2>
       </a>
     </div>
   </div>
-
 </body>
+
+<form action="/insert_nuva_cycle">
+  <label>Username</label>
+  <input name="query_username">
+
+  <button>Add user</button>
+</form>
+
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Email</th>
+    <th>Date of Nuva Day One</th>
+    <th></th>
+  </tr>
+
+  <% @all_users.each do |a_user| %>
+    <tr>
+      <td>
+        <%= a_user.id %>
+      </td>
+
+      <td>
+        <%= a_user.email %>
+      </td>
+
+      <td>
+        <%= a_user.date %>
+      </td>
+
+    </tr>
+  <% end %>
+</table>
+

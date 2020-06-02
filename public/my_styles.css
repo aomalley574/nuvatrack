@@ -1,0 +1,38 @@
+   .pinkbutton { 
+    border: 3px LightBlue solid;
+    padding-top: 25x;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    margin: 60px;
+    background-color: #ffe6e6;
+    display: inline-block;
+    }
+    
+
+
+.row {
+    display: flex;
+    justify-content: center }
+
+.mb {
+  margin-bottom: 10px;
+}
+
+.centered {
+  text-align: center;
+}
+    
+.one-third {
+    width: 50%;
+    }
+
+body {
+  font-family: 'Catamaran', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
