@@ -29,11 +29,11 @@ class ApplicationController < ActionController::Base
 
     # twentyonedatetime = DateTime.current + 21.days
     twentyonedatetime = Date.today + 21.days
-    refactoreddatetime21 = twentyonedatetime.strftime("%Y%m%e")
+    refactoreddatetime21 = twentyonedatetime.strftime("%Y%m%d")
 
     # thirydatetime = DateTime.current + 30.days
     thirydatetime = Date.today + 30.days
-    refactoreddatetime30 = thirydatetime.strftime("%Y%m%e")
+    refactoreddatetime30 = thirydatetime.strftime("%Y%m%d")
 
     # Craft your email as a Hash with these four keys
     email_parameters =  { 
