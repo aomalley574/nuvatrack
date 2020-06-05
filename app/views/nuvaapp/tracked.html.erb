@@ -1,60 +1,39 @@
 <!DOCTYPE html>
+
 <html>
-<head>
+  <head>
+    <style>
+      
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/minty/bootstrap.min.css">
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
 
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body class="pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <form>
+            
 
-  <link rel="stylesheet" href="/my_styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
+            <a class="btn btn-block btn-large btn-info" href="/" role="button">
+              <h3 style ="color:white";>
+                Reminder Sent!
+              </h3>
+            </a>
+          
+          </form>
 
-</head>
+        </div>
+      </div>
 
-<body>
-
-<div class="row centered">
-    <div class="one-third">
-      <a class="pinkbutton" href ="/">
-        <h2>
-          Ring Removal Reminder Sent!
-        </h2>
-      </a>
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+        </div>
+      </div>
     </div>
-  </div>
-</body>
-
-<form action="/insert_nuva_cycle">
-  <label>Username</label>
-  <input name="query_username">
-
-  <button>Add user</button>
-</form>
-
-<table border="1">
-  <tr>
-    <th>ID</th>
-    <th>Email</th>
-    <th>Date of Nuva Day One</th>
-    <th></th>
-  </tr>
-
-  <% @all_users.each do |a_user| %>
-    <tr>
-      <td>
-        <%= a_user.id %>
-      </td>
-
-      <td>
-        <%= a_user.email %>
-      </td>
-
-      <td>
-        <%= a_user.date %>
-      </td>
-
-    </tr>
-  <% end %>
-</table>
-
+  </body>
+</html>
